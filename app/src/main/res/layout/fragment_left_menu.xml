@@ -15,6 +15,7 @@
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
         android:text="MENU ONE"
+        android:textColor="#ffffff"
         android:textSize="25sp"/>
 
     <TextView
@@ -25,6 +26,7 @@
         android:drawableLeft="@mipmap/ic_item_feedback"
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
+        android:textColor="#ffffff"
         android:text="MENU TWO"
         android:textSize="25sp"/>
 
@@ -37,5 +39,6 @@
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
         android:text="MENU THREE"
+        android:textColor="#ffffff"
         android:textSize="25sp"/>
 </LinearLayout>
