@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:drawableLeft="@mipmap/ic_item_about"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="MENU ONE"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:drawableLeft="@mipmap/ic_item_feedback"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="MENU TWO"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:drawableLeft="@mipmap/ic_item_question"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="MENU THREE"
+        android:textSize="25sp"/>
+</LinearLayout>

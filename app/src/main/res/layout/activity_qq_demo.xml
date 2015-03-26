@@ -1,0 +1,34 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_guide_page_one"/>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/left_menu"
+        class="com.jacob.drawerlayout.qq.LeftMenuFragment"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"/>
+
+    <fragment
+        android:id="@+id/right_menu"
+        class="com.jacob.drawerlayout.qq.RightMenuFragment"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"/>
+</android.support.v4.widget.DrawerLayout>
