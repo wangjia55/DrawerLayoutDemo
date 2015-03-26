@@ -12,10 +12,13 @@
         android:layout_height="match_parent"
         android:background="#ffffff">
 
-        <ImageView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@mipmap/bg_guide_page_one"/>
+            android:layout_centerInParent="true"
+            android:text="主界面"
+            android:gravity="center"
+            android:textSize="50sp"/>
     </RelativeLayout>
 
 

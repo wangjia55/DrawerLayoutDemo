@@ -3,7 +3,6 @@ package com.jacob.drawerlayout.qq;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.View;
 
 import com.jacob.drawerlayout.R;
@@ -29,7 +28,6 @@ public class QQDrawerLayoutDemo extends FragmentActivity {
         mDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
-                Log.e("TAG", slideOffset + "**" + drawerView.getTag());
                 View contentView = mDrawerLayout.getChildAt(0);
                 View menu = drawerView;
 
