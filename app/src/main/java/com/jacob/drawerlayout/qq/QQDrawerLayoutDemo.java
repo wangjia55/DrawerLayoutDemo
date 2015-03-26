@@ -3,6 +3,7 @@ package com.jacob.drawerlayout.qq;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.View;
 
 import com.jacob.drawerlayout.R;
@@ -24,7 +25,8 @@ public class QQDrawerLayoutDemo extends FragmentActivity {
         setContentView(R.layout.activity_qq_demo);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
+        mDrawerLayout.setDrawerLockMode(
+                DrawerLayout.LOCK_MODE_LOCKED_CLOSED, Gravity.RIGHT);
         mDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -74,7 +76,14 @@ public class QQDrawerLayoutDemo extends FragmentActivity {
             }
         });
 
+    }
 
+    public void rightMenu(View view){
+        if (mDrawerLayout.isDrawerOpen(Gravity.RIGHT)){
+            mDrawerLayout.closeDrawer(Gravity.RIGHT);
+        }else{
+            mDrawerLayout.openDrawer(Gravity.RIGHT);
+        }
     }
 
 }
